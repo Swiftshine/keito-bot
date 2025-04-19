@@ -10,7 +10,6 @@ pub type Context<'a> = poise::Context<'a, Data, Error>;
 pub fn create_reply(reply_contents: String) -> poise::CreateReply {
     poise::CreateReply::default()
         .content(reply_contents)
-        .ephemeral(true)
 }
 
 // /// A helper function to create a non-pinging reply visible only
@@ -18,4 +17,5 @@ pub fn create_reply(reply_contents: String) -> poise::CreateReply {
 // pub fn create_ephemeral_reply(reply_contents: String) -> poise::CreateReply {
 //     poise::CreateReply::default()
 //         .content(reply_contents)
+//         .ephemeral(true)
 // }
