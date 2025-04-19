@@ -23,7 +23,7 @@ pub async fn gfhash(
         } else {
             format!("`{result}`")
         }
-    } + &format!(" (`input`)");
+    } + &format!(" (`{input}`)");
 
     ctx.reply(reply_contents).await?;
 
