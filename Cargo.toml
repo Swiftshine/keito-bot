@@ -8,6 +8,9 @@ anyhow = "1.0.98"
 dotenvy = "0.15.7"
 gfarch = "0.2.3"
 poise = "0.6.1"
+ppc750cl = "0.3.2"
+ppc750cl-asm = "0.3.2"
+thiserror = "2.0.12"
 tokio = { version = "1.44.2", features = ["macros", "rt-multi-thread"] }
 zip = "2.6.1"
 

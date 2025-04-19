@@ -1,5 +1,6 @@
 mod context;
 mod commands;
+mod ppc;
 
 use dotenvy;
 use anyhow::Result;
@@ -18,6 +19,8 @@ async fn main() -> Result<()> {
         commands: vec![
             commands::gfhash::gfhash(),
             commands::gfarch_unpack::gfarch_unpack(),
+            commands::assemble::assemble(),
+            commands::disassemble::disassemble()
         ],
         ..Default::default()
     };
