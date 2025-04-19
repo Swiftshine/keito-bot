@@ -16,7 +16,8 @@ async fn main() -> Result<()> {
 
     let framework_options = poise::FrameworkOptions {
         commands: vec![
-            commands::gfhash::gfhash()
+            commands::gfhash::gfhash(),
+            commands::gfarch_unpack::gfarch_unpack(),
         ],
         ..Default::default()
     };
