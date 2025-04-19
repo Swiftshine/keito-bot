@@ -6,10 +6,16 @@ pub struct Data;
 pub type Context<'a> = poise::Context<'a, Data, Error>;
 
 
-/// A helper function to create a non-pinging reply visible only
-/// to the user of a slash command.
+/// A helper function to create a non-pinging reply.
 pub fn create_reply(reply_contents: String) -> poise::CreateReply {
     poise::CreateReply::default()
         .content(reply_contents)
         .ephemeral(true)
 }
+
+// /// A helper function to create a non-pinging reply visible only
+// /// to the user of a slash command.
+// pub fn create_ephemeral_reply(reply_contents: String) -> poise::CreateReply {
+//     poise::CreateReply::default()
+//         .content(reply_contents)
+// }
